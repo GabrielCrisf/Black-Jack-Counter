@@ -74,7 +74,7 @@ for(let i=0;i<12;i++)
     if(i==3)
     {
         tmp.classList.add('Ace', 'Card');
-        tmp.style.background = `url('../images/Logo.png')`;
+        tmp.style.background = `url('../Black-Jack-Counter/images/Logo.png')`;
         tmp.style.backgroundSize = '50px'
         tmp=ConfigCard(tmp);
         SEC_1.appendChild(tmp);
@@ -172,7 +172,7 @@ const Stylizer = (aux, i, j) =>
 {
     if(j)
     aux.style.background =
-    `url('../images/PP/${Deck[j].val}${Deck[1].Naipe[Math.floor(Math.random() * 4)].naip}.png`
+    `url('../Black-Jack-Counter/images/PP/${Deck[j].val}${Deck[1].Naipe[Math.floor(Math.random() * 4)].naip}.png`
 
     aux.style.backgroundSize = '101px'
 
@@ -493,7 +493,7 @@ const UNDO = () =>
     {
         aux.classList.remove('Disabled_Card')
         
-            aux.style.background = `url('../images/PP/${Deck[aux.classList[0]].val}${Deck[1].Naipe[Math.floor(Math.random() * 4)].naip}.png`
+            aux.style.background = `url('../Black-Jack-Counter/images/PP/${Deck[aux.classList[0]].val}${Deck[1].Naipe[Math.floor(Math.random() * 4)].naip}.png`
             aux.style.backgroundSize = '101px'
          
              //add eventListener aqui!!
