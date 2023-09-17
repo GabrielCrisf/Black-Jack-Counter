@@ -6,7 +6,7 @@ const div2 = [];
 
 let undo = [];
 let redo = [];
-let vector = 4;
+let vector = 24;
 let VReal = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 //           A  2  3  4  5  6  7  8  9 10  J  Q  K
 
