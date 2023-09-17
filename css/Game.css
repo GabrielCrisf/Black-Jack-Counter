@@ -1,0 +1,383 @@
+
+/* Reset o mais basico */
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;   
+   }
+
+   .Body
+   {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* height: 100vh; */
+    background-color: rgb(39, 10, 145);
+    /* align-items: center; */
+    
+   }
+
+.d1
+{
+  display: flex;
+  align-self: center;
+  /* flex-direction: row; */
+  /* justify-content: center; */
+   /* height: 100vh; */
+  /* background-color: rgb(39, 10, 145); */
+  /* align-items: center; */
+}
+
+.d2
+{
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+
+  background-color: aliceblue;
+  width: 1500px;
+  height: 100px;
+  align-self: center;
+  margin-bottom: 10px;
+
+  /* Text formatation:: */
+
+  font-size: 40px;
+  text-align: center;
+
+  /* flex-direction: row; */
+  /* justify-content: center; */
+   /* height: 20vh;  */
+   /* width: 100vh; */
+  /* /background-color: rgb(39, 10, 145); */
+  /* align-items: center; */
+  /* position:relative; */
+  /* margin-bottom: 20%; */
+}
+
+.Forma
+{
+    display: flex;
+    flex-direction: column;
+    border: 8px solid;
+    color: green;
+    align-self: center;
+}
+.icon
+{
+  align-self: center;
+  background-color: aqua;
+  height: 150px;
+  column-gap: 10px;
+}
+
+.Face_UP
+{
+  background: url('../images/ash.png');
+  background-size: 100px;
+
+ /* aspect-ratio: 2/3; */
+}
+
+
+.Qnt
+{
+  align-self: center;
+  background-color: red;
+  column-gap: 10px;
+}
+
+.Remain
+{
+  align-self: center;
+  background-color: rgb(94, 255, 0);
+  column-gap: 1px;
+  row-gap: 200px;
+}
+
+
+.Rotulo
+{
+  background-color: rgb(19, 114, 19);
+  width: 1500px;
+  height: 100px;
+
+  justify-self: center;
+  align-self: center;
+  
+  border: 5px solid;
+  padding-top: 20px;
+  margin-bottom: 20px;
+
+  /* Texto:: */
+  font-size: 40px;
+  color: gold;
+  text-align: center;
+  font-weight: bolder;
+}
+   
+
+.SEC_0
+{
+  display: grid;
+  grid-template-columns: 1fr; 
+
+  width: 200px;
+  height: 700px;
+  background-color:rgb(255, 14, 14);
+  position: relative;
+  margin-top: 200px;
+  /* margin-bottom: 100px; */
+  align-content: center;
+  justify-content: center;
+}
+
+.SEC_1
+{
+  display: grid;
+  grid-template-columns: 
+  1fr 1fr 1fr 1fr 1fr; /* 11 */
+  row-gap: 15px;
+
+  width: 900px;
+  height: 700px;
+  background-color:rgb(33, 160, 17);
+  position: relative;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  align-content: center;
+  justify-content: center;
+  padding: auto;
+}
+
+.Card
+{
+  border-radius: 8px;
+  background-image: url('../images/ash.png');
+  background-size:cover;
+  width: 90%;
+  position: relative;
+  justify-self: center;
+  aspect-ratio: 2/3;
+
+  /* FaceUp.style.backgroundImage = 
+  `url('../Images/Sleeves/${Dragao}.png')`; //duas cràses */
+
+}
+
+.Butte
+{
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  color: yellow;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: blue;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.Butte:hover
+{
+  background-color: red;
+}
+
+.Titler
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 40px;
+  justify-self: center;
+  background-color: rgb(229, 245, 7) ;
+  border: 5px solid;
+  padding-inline: 40px;
+
+  font-weight: bolder;
+  color: brown;
+  position: absolute;
+}
+
+
+.Reveal
+{
+    transform: rotateY(-180deg);
+    transition: transform 2s ease;
+
+}
+
+.UnReveal
+{
+    transform: rotateY(0deg);
+    transition: transform 2s ease;
+
+}
+
+
+.Disabled_Card 
+{
+  /* transform: rotateY(180deg); */
+  /* transition: transform 2s ease; */
+  transition:  ease-in-out;
+  
+  background-size: 10px;
+  filter: blur(2px);
+  opacity: 0.9;
+  animation: Slw 6.9s;
+}
+
+
+@keyframes Slw
+{
+  from {transform: rotateY(-180deg); }
+  to { transform: rotateY(180deg); }
+
+}
+
+@keyframes Cactus-animation {
+
+  from { right: 0%; }
+  to { right: 100%; }
+}
+
+@keyframes Jump {
+  
+  /* quando a animacao estiver em 0%, nao pula */
+  0% { bottom: 0px; }
+
+  40%{ bottom: 180px; }
+
+  60%{ bottom: 180px }
+
+  100%{ bottom: 0px }
+
+}
+
+
+/* Methods */
+
+.Accounting_Method
+{
+  display: flex;
+  flex-direction: column;
+  background-color:gold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border: 5px solid;
+  align-items: center;
+  padding-top: 25px;
+
+  /* Texto:: */
+  color: blue ;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.Acoo
+{
+  background-color:rgb(39, 10, 145);
+  display: flex;
+  flex-direction: row;
+}
+
+.TitlerMeth
+{
+
+  width: 486px;
+  background-color: rgb(14, 14, 219);
+  color: yellow;
+  padding-top: 15px;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+
+
+.MethName
+{
+  background-color:rgb(39, 10, 145);
+  display: flex;
+  flex-direction: row;
+}
+
+.Meth
+{
+  width: 486px;
+  background-color: rgb(0, 0, 0);
+  color: orangered;
+  padding-top: 15px;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.MethValue
+{
+  background-color: rgb(39, 10, 145);
+  ;
+  display: flex;
+  flex-direction: row;
+}
+
+.MethV
+{
+  width: 486px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 10, 214);
+  padding-top: 15px;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.TrueMethod
+{
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(0, 255, 0);
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border: 5px solid;
+  align-items: center;
+  padding-top: 25px;
+
+  /* Texto:: */
+  color: blue ;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.MethValue
+{
+  background-color: rgb(39, 10, 145);
+  ;
+  display: flex;
+  flex-direction: row;
+}
+
+.TrueName
+{
+  background-color:rgb(39, 10, 145);
+  display: flex;
+  flex-direction: row;
+}
+
+
+.TrueValue
+{
+  background-color: rgb(39, 10, 145);
+  ;
+  display: flex;
+  flex-direction: row;
+}
+
+.True
+{
+  width: 486px;
+  background-color: rgb(0, 0, 0);
+  color: orangered;
+  padding-top: 15px;
+  font-size: 60px;
+  font-weight: bolder;
+}

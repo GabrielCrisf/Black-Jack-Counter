@@ -1,0 +1,59 @@
+//Cria o botao Butt
+const Butt = document.createElement('button')
+Butt.classList.add('Butte');
+SEC_1.appendChild(Butt)
+
+const Actionen = (evento) =>{
+    const T = `Tecla pressed: ${evento.key}`
+    console.log(`${evento.key}`)
+    alert(T);
+}
+
+const Act = () =>{
+    console.log('PQP');
+}
+
+Butt.addEventListener('keypress', () => {Actionen(event);});
+Butt.addEventListener('auxclick', Act);
+Butt.classList.add('Namen');
+
+let e =  document.createElement('div')
+Butt.appendChild (e);
+Butt.textContent = 'CLIKA'
+
+//jeito certo::
+
+// Crie um novo elemento de botão
+//var button = document.createElement('button');
+
+// Defina o texto do botão
+//button.textContent = 'Clique-me';
+
+// Adicione um evento de clique ao botão
+//button.addEventListener('click', f);
+//SEC_1.appendChild(button);
+//SEC_1.removeChild(Butt);
+
+
+// Função a ser chamada quando o botão for clicado
+function f() {
+    console.log('Hello');
+}
+
+Butt.classList.add('Butte')
+let FF = Butt.firstElementChild //elementos HTML
+let FD = Butt.firstChild //Qualquer coisa, texto, img...
+
+for (let i=0; i<4; i++)
+{
+    const tmp = document.createElement('div');
+    // FF.appendChild(tmp)
+}
+
+/* Template
+Butt.addEventListener('keypress', function(event) {
+    if (event.key === 'A') {
+      // Código a ser executado quando a tecla 'A' for pressionada
+    }
+  }); 
+  */
