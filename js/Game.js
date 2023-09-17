@@ -345,7 +345,7 @@ const Eventer = (aux) =>
         
         setTimeout(()=>{
             aux.style.background = 
-            `url('../images/Back${Math.floor(Math.random() * 3)}.png')`;
+            `url('../Black-Jack-Counter/images/Back${Math.floor(Math.random() * 3)}.png')`;
             aux.style.backgroundSize = '100px';
         },3100)//sintonia fina
     }
