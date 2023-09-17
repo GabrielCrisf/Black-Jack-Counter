@@ -139,7 +139,7 @@ const Naiper = ['_of_clubs','_of_diamonds',
     let N=i;
 
     if(i==1)
-        N = 'Ace';
+        N = 'ace';
     if(N==11)
         N = 'jack';
     if(N==12)
